@@ -5,7 +5,12 @@ class Login {
   int userID;
   String userEmail;
 
-  Login({this.code,this.status,this.token,this.userID,this.userEmail});
+  Login(
+      {required this.code,
+      required this.status,
+      required this.token,
+      required this.userID,
+      required this.userEmail});
 
   factory Login.fromJson(Map<String, dynamic> obj) {
     return Login(
